@@ -1,7 +1,7 @@
 {
   "name": "uptime-worker",
   "scripts": {
-    "dev": "wrangler dev src/index.ts",
+    "dev": "wrangler dev src/index.ts --test-scheduled",
     "deploy": "wrangler deploy --minify src/index.ts"
   },
   "dependencies": {

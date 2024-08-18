@@ -1,9 +1,6 @@
-import { Hono } from 'hono'
-
-const app = new Hono()
-
-app.get('/', (c) => {
-  return c.text('Hello Hono!')
-})
-
-export default app
+import { app } from "@/route";
+import { scheduled } from "@/scheduled";
+export default {
+  fetch: app.fetch,
+  scheduled,
+};
