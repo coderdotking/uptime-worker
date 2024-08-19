@@ -24,4 +24,4 @@ kv_namespaces = [{binding = "UPTIMEFLARE_STATE_V1", id = "e8e276b19a104f99817cc8
 # binding = "AI"
 
 [triggers]
-crons = ["0 * * * *"]
+crons = ["* * * * *"]
