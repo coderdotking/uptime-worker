@@ -9,7 +9,7 @@ name = "uptime-worker"
 # [[kv_namespaces]]
 # binding = "MY_KV_NAMESPACE"
 # id = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
-kv_namespaces = [{binding = "UPTIMEFLARE_STATE_V1", id = "UPTIMEFLARE_STATE_V1"}]
+kv_namespaces = [{binding = "UPTIMEFLARE_STATE_V1", id = "e8e276b19a104f99817cc81950aadbc5"}]
 
 # [[r2_buckets]]
 # binding = "MY_BUCKET"
