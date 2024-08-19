@@ -15,9 +15,41 @@ const workerConfig = {
       // [可选] `tooltip` 仅用于在状态页面上显示工具提示
       tooltip: "https://blog.huala.fun",
       headers: {
-        "User-Agent": "uptime_worker",
+        "User-Agent": "",
       },
-      statusPageLink: "https://example.com",
+      statusPageLink: "https://blog.huala.fun",
+    },
+    {
+      // `id` 应该是唯一的，如果 `id` 保持不变，将保留历史记录
+      id: "toolbox_monitor",
+      // `name` 用于状态页面和回调消息
+      name: "我的工具箱",
+      // `method` 应该是一个有效的HTTP方法
+      method: "HEAD",
+      // `target` 是一个有效的URL
+      target: "https://toolbox.huala.fun",
+      // [可选] `tooltip` 仅用于在状态页面上显示工具提示
+      tooltip: "https://toolbox.huala.fun",
+      headers: {
+        "User-Agent": "",
+      },
+      statusPageLink: "https://toolbox.huala.fun",
+    },
+    {
+      // `id` 应该是唯一的，如果 `id` 保持不变，将保留历史记录
+      id: "draw_monitor",
+      // `name` 用于状态页面和回调消息
+      name: "我的工具箱",
+      // `method` 应该是一个有效的HTTP方法
+      method: "HEAD",
+      // `target` 是一个有效的URL
+      target: "https://draw.huala.fun",
+      // [可选] `tooltip` 仅用于在状态页面上显示工具提示
+      tooltip: "https://draw.huala.fun",
+      headers: {
+        "User-Agent": "",
+      },
+      statusPageLink: "https://draw.huala.fun",
     },
   ],
   callbacks: {
@@ -58,6 +90,6 @@ const workerConfig = {
     // 只有在监控器在初次失败后连续N次检查仍然处于故障状态时，才会发送通知
     // 如果没有指定，将立即发送通知
     gracePeriod: 5,
-  }
+  },
 };
 export { workerConfig };
