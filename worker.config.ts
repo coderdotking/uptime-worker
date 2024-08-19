@@ -39,7 +39,7 @@ const workerConfig = {
       // `id` 应该是唯一的，如果 `id` 保持不变，将保留历史记录
       id: "draw_monitor",
       // `name` 用于状态页面和回调消息
-      name: "我的工具箱",
+      name: "我的画板",
       // `method` 应该是一个有效的HTTP方法
       method: "HEAD",
       // `target` 是一个有效的URL
